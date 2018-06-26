@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Front-End | <%= title %></title>
+    <meta name="author" content="André Rodrigues (xor)">
+    <!--CSS-->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main" role="main">      
+      <nav class="navbar" role="navigation">
+        <div class="new_project">
+          <h2>CRIAR NOVO PROJETO</h2>
+          <form action="" method="post" id="create_project">
+            <input type="text" name="name_project" id="" placeholder="Nome projeto">
+            <input type="submit" value="CRIAR PROJETO" class="bt bt-green" id="create">
+          </form><!--/form-->
+        </div><!--/new-project-->
+        <div class="pages">
+          <h2>PÁGINAS CRIADAS</h2>
+        </div><!--/pages-->
+      </nav><!--/navbar-->
+      <section class="content">
+          <header class="top">
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="ícone logo do editor" class="icon-logo">
+          </div><!--/logo-->
+          <div class="actions">
+            <ul>
+              <a href=""><i></i></a>
+            </ul>
+          </div><!--/actions-->
+        </header><!--/header-top-->
+        <article>
+          <div class="container">
+            <div class="col-12">
+              <div class="box" id="edit">
+
+              </div><!--/box-->
+            </div>
+          </div>
+        </article>
+      </section><!--/content-->
+    </main><!--/main-->     
+    <!--scripts-->
+    <script>require('./renderer.js')</script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
